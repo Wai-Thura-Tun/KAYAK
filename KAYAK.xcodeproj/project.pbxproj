@@ -7,14 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064A26922BB7ACBD00D0D3C7 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A26912BB7ACBC00D0D3C7 /* CreateAccountVC.swift */; };
+		064A26942BB7B8F100D0D3C7 /* NotiInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A26932BB7B8F100D0D3C7 /* NotiInfoVC.swift */; };
+		064A26962BB7BCD500D0D3C7 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A26952BB7BCD500D0D3C7 /* WelcomeVC.swift */; };
+		064A269A2BB80BA700D0D3C7 /* RegionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A26982BB80BA700D0D3C7 /* RegionCell.swift */; };
+		064A269B2BB80BA700D0D3C7 /* RegionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 064A26992BB80BA700D0D3C7 /* RegionCell.xib */; };
+		064A269E2BB8209800D0D3C7 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A269D2BB8209800D0D3C7 /* Region.swift */; };
+		065C703A2BB4519A007B17DC /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065C70392BB4519A007B17DC /* WebViewVC.swift */; };
+		0680324C2BC5797E0009BF4E /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0680324B2BC5797E0009BF4E /* Regex.swift */; };
+		068032532BC6589F0009BF4E /* EmailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068032522BC6589F0009BF4E /* EmailVM.swift */; };
+		068032552BC65BDC0009BF4E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068032542BC65BDC0009BF4E /* LoginVC.swift */; };
+		068032572BC65BEC0009BF4E /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068032562BC65BEC0009BF4E /* LoginVM.swift */; };
+		0680325A2BC665E40009BF4E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068032592BC665E40009BF4E /* String.swift */; };
+		0680325C2BC66B060009BF4E /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0680325B2BC66B060009BF4E /* UITextField.swift */; };
+		0680325F2BC6799C0009BF4E /* CreateAccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0680325E2BC6799C0009BF4E /* CreateAccountVM.swift */; };
+		068032622BC67D150009BF4E /* WelcomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068032612BC67D150009BF4E /* WelcomeVM.swift */; };
+		068032652BC6813B0009BF4E /* NotiInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068032642BC6813B0009BF4E /* NotiInfoVM.swift */; };
+		068032682BC6C1CB0009BF4E /* RegionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068032672BC6C1CB0009BF4E /* RegionRepository.swift */; };
+		0680326C2BC6C2640009BF4E /* RegionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0680326B2BC6C2640009BF4E /* RegionDataSource.swift */; };
 		06BBBCE52BB1CD0600C0B0CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BBBCE42BB1CD0600C0B0CC /* AppDelegate.swift */; };
 		06BBBCE72BB1CD0600C0B0CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BBBCE62BB1CD0600C0B0CC /* SceneDelegate.swift */; };
 		06BBBCEC2BB1CD0600C0B0CC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 06BBBCEB2BB1CD0600C0B0CC /* Base */; };
 		06BBBCEE2BB1CD0A00C0B0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BBBCED2BB1CD0A00C0B0CC /* Assets.xcassets */; };
 		06BBBCF12BB1CD0A00C0B0CC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 06BBBCF02BB1CD0A00C0B0CC /* Base */; };
+		06BBBD002BB1ECCC00C0B0CC /* RootNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BBBCFF2BB1ECCC00C0B0CC /* RootNC.swift */; };
+		06CB67192BB4668C0095A24B /* EmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CB67182BB4668C0095A24B /* EmailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		064A26912BB7ACBC00D0D3C7 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		064A26932BB7B8F100D0D3C7 /* NotiInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiInfoVC.swift; sourceTree = "<group>"; };
+		064A26952BB7BCD500D0D3C7 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		064A26982BB80BA700D0D3C7 /* RegionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionCell.swift; sourceTree = "<group>"; };
+		064A26992BB80BA700D0D3C7 /* RegionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegionCell.xib; sourceTree = "<group>"; };
+		064A269D2BB8209800D0D3C7 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		065C70392BB4519A007B17DC /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
+		0680324B2BC5797E0009BF4E /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		068032522BC6589F0009BF4E /* EmailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVM.swift; sourceTree = "<group>"; };
+		068032542BC65BDC0009BF4E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = KAYAK/Views/Vc/Email/LoginVC.swift; sourceTree = SOURCE_ROOT; };
+		068032562BC65BEC0009BF4E /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVM.swift; path = KAYAK/Views/Vc/Email/LoginVM.swift; sourceTree = SOURCE_ROOT; };
+		068032592BC665E40009BF4E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		0680325B2BC66B060009BF4E /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		0680325E2BC6799C0009BF4E /* CreateAccountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVM.swift; sourceTree = "<group>"; };
+		068032612BC67D150009BF4E /* WelcomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVM.swift; sourceTree = "<group>"; };
+		068032642BC6813B0009BF4E /* NotiInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiInfoVM.swift; sourceTree = "<group>"; };
+		068032672BC6C1CB0009BF4E /* RegionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRepository.swift; sourceTree = "<group>"; };
+		0680326B2BC6C2640009BF4E /* RegionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDataSource.swift; sourceTree = "<group>"; };
 		06BBBCE12BB1CD0600C0B0CC /* KAYAK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAYAK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06BBBCE42BB1CD0600C0B0CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06BBBCE62BB1CD0600C0B0CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +60,8 @@
 		06BBBCED2BB1CD0A00C0B0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06BBBCF02BB1CD0A00C0B0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06BBBCF22BB1CD0A00C0B0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06BBBCFF2BB1ECCC00C0B0CC /* RootNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNC.swift; sourceTree = "<group>"; };
+		06CB67182BB4668C0095A24B /* EmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +75,153 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		064A26972BB8088D00D0D3C7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				068032662BC6BD860009BF4E /* RegionCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		068032452BC578490009BF4E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				068032692BC6C23B0009BF4E /* Model */,
+				068032462BC578870009BF4E /* DataSource */,
+				068032482BC5789A0009BF4E /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		068032462BC578870009BF4E /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				068032472BC5788E0009BF4E /* Local */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		068032472BC5788E0009BF4E /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				0680326B2BC6C2640009BF4E /* RegionDataSource.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		068032482BC5789A0009BF4E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				068032672BC6C1CB0009BF4E /* RegionRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		068032492BC579540009BF4E /* Contant */ = {
+			isa = PBXGroup;
+			children = (
+				0680324B2BC5797E0009BF4E /* Regex.swift */,
+			);
+			path = Contant;
+			sourceTree = "<group>";
+		};
+		0680324D2BC5798B0009BF4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				068032582BC665D00009BF4E /* Extension */,
+				064A26972BB8088D00D0D3C7 /* Cell */,
+				06BBBD012BB1ECD500C0B0CC /* Navigations */,
+				06A67F432BB34C70000660F3 /* Vc */,
+				06BBBCF82BB1CF8500C0B0CC /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0680324E2BC6572F0009BF4E /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				06CB67182BB4668C0095A24B /* EmailVC.swift */,
+				068032522BC6589F0009BF4E /* EmailVM.swift */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		0680324F2BC6573B0009BF4E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				068032542BC65BDC0009BF4E /* LoginVC.swift */,
+				068032562BC65BEC0009BF4E /* LoginVM.swift */,
+			);
+			name = Login;
+			path = Login/Login;
+			sourceTree = "<group>";
+		};
+		068032582BC665D00009BF4E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				068032592BC665E40009BF4E /* String.swift */,
+				0680325B2BC66B060009BF4E /* UITextField.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0680325D2BC6797C0009BF4E /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				064A26912BB7ACBC00D0D3C7 /* CreateAccountVC.swift */,
+				0680325E2BC6799C0009BF4E /* CreateAccountVM.swift */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
+		068032602BC67CC80009BF4E /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				064A26952BB7BCD500D0D3C7 /* WelcomeVC.swift */,
+				068032612BC67D150009BF4E /* WelcomeVM.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		068032632BC67D620009BF4E /* NotiInfo */ = {
+			isa = PBXGroup;
+			children = (
+				064A26932BB7B8F100D0D3C7 /* NotiInfoVC.swift */,
+				068032642BC6813B0009BF4E /* NotiInfoVM.swift */,
+			);
+			path = NotiInfo;
+			sourceTree = "<group>";
+		};
+		068032662BC6BD860009BF4E /* RegionCell */ = {
+			isa = PBXGroup;
+			children = (
+				064A26982BB80BA700D0D3C7 /* RegionCell.swift */,
+				064A26992BB80BA700D0D3C7 /* RegionCell.xib */,
+			);
+			path = RegionCell;
+			sourceTree = "<group>";
+		};
+		068032692BC6C23B0009BF4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				064A269D2BB8209800D0D3C7 /* Region.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06A67F432BB34C70000660F3 /* Vc */ = {
+			isa = PBXGroup;
+			children = (
+				068032632BC67D620009BF4E /* NotiInfo */,
+				068032602BC67CC80009BF4E /* Welcome */,
+				0680325D2BC6797C0009BF4E /* CreateAccount */,
+				0680324E2BC6572F0009BF4E /* Email */,
+				0680324F2BC6573B0009BF4E /* Login */,
+				065C70392BB4519A007B17DC /* WebViewVC.swift */,
+			);
+			path = Vc;
+			sourceTree = "<group>";
+		};
 		06BBBCD82BB1CD0600C0B0CC = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +241,32 @@
 		06BBBCE32BB1CD0600C0B0CC /* KAYAK */ = {
 			isa = PBXGroup;
 			children = (
+				068032492BC579540009BF4E /* Contant */,
+				068032452BC578490009BF4E /* Data */,
+				0680324D2BC5798B0009BF4E /* Views */,
 				06BBBCE42BB1CD0600C0B0CC /* AppDelegate.swift */,
 				06BBBCE62BB1CD0600C0B0CC /* SceneDelegate.swift */,
-				06BBBCEA2BB1CD0600C0B0CC /* Main.storyboard */,
 				06BBBCED2BB1CD0A00C0B0CC /* Assets.xcassets */,
 				06BBBCEF2BB1CD0A00C0B0CC /* LaunchScreen.storyboard */,
 				06BBBCF22BB1CD0A00C0B0CC /* Info.plist */,
 			);
 			path = KAYAK;
+			sourceTree = "<group>";
+		};
+		06BBBCF82BB1CF8500C0B0CC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				06BBBCEA2BB1CD0600C0B0CC /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		06BBBD012BB1ECD500C0B0CC /* Navigations */ = {
+			isa = PBXGroup;
+			children = (
+				06BBBCFF2BB1ECCC00C0B0CC /* RootNC.swift */,
+			);
+			path = Navigations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +330,7 @@
 				06BBBCEE2BB1CD0A00C0B0CC /* Assets.xcassets in Resources */,
 				06BBBCF12BB1CD0A00C0B0CC /* Base in Resources */,
 				06BBBCEC2BB1CD0600C0B0CC /* Base in Resources */,
+				064A269B2BB80BA700D0D3C7 /* RegionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +341,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				068032572BC65BEC0009BF4E /* LoginVM.swift in Sources */,
 				06BBBCE52BB1CD0600C0B0CC /* AppDelegate.swift in Sources */,
+				0680325F2BC6799C0009BF4E /* CreateAccountVM.swift in Sources */,
+				0680326C2BC6C2640009BF4E /* RegionDataSource.swift in Sources */,
+				068032532BC6589F0009BF4E /* EmailVM.swift in Sources */,
+				0680325C2BC66B060009BF4E /* UITextField.swift in Sources */,
 				06BBBCE72BB1CD0600C0B0CC /* SceneDelegate.swift in Sources */,
+				065C703A2BB4519A007B17DC /* WebViewVC.swift in Sources */,
+				068032652BC6813B0009BF4E /* NotiInfoVM.swift in Sources */,
+				064A269A2BB80BA700D0D3C7 /* RegionCell.swift in Sources */,
+				064A26962BB7BCD500D0D3C7 /* WelcomeVC.swift in Sources */,
+				0680324C2BC5797E0009BF4E /* Regex.swift in Sources */,
+				06CB67192BB4668C0095A24B /* EmailVC.swift in Sources */,
+				064A26922BB7ACBD00D0D3C7 /* CreateAccountVC.swift in Sources */,
+				068032552BC65BDC0009BF4E /* LoginVC.swift in Sources */,
+				064A269E2BB8209800D0D3C7 /* Region.swift in Sources */,
+				068032622BC67D150009BF4E /* WelcomeVM.swift in Sources */,
+				0680325A2BC665E40009BF4E /* String.swift in Sources */,
+				068032682BC6C1CB0009BF4E /* RegionRepository.swift in Sources */,
+				06BBBD002BB1ECCC00C0B0CC /* RootNC.swift in Sources */,
+				064A26942BB7B8F100D0D3C7 /* NotiInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
