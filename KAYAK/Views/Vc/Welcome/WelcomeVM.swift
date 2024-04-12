@@ -6,3 +6,32 @@
 //
 
 import Foundation
+
+protocol WelcomeViewDelegate {
+    func onGetRegions()
+}
+
+class WelcomeVM {
+    private let repository: RegionRepository = RegionRepository.init()
+    
+    private (set) var regions: [Region] = [] {
+        didSet {
+            self.delegate.onGetRegions()
+        }
+    }
+    
+    private let delegate: WelcomeViewDelegate
+    
+    init(delegate: WelcomeViewDelegate) {
+        self.delegate = delegate
+    }
+    
+    func getAll() {
+        regions = repository.getAll()
+    }
+    
+    func toggleSelectStatus(regionId id: Int) {
+        repository.toggleSelectStatus(regionId: id)
+        getAll()
+    }
+}

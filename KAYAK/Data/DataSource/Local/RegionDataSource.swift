@@ -14,11 +14,12 @@ class RegionDataSource {
     
     private init() {}
     
-    func getRegionLists() -> [Region] {
+    func getAll() -> [Region] {
         return regionLists
     }
     
-    func toggleSelect(regionId id: Int) {
+    func toggleSelectStatus(regionId id: Int) {
         regionLists.first { $0.id == id }?.isSelected.toggle()
     }
+    
 }

@@ -22,7 +22,7 @@ class RegionCell: UITableViewCell {
                 self.lblRegionStatus.text = "Current Region"
                 self.lblRegionName.text = data.name
                 self.lblRegionWeb.text = data.website
-                self.lblRegionMoney.text = data.moneyType
+                self.lblRegionMoney.text = data.currency
             }
         }
     }

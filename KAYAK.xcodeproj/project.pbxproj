@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064788302BC906E90039A9C0 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0647882F2BC906E90039A9C0 /* HomeVC.swift */; };
 		064A26922BB7ACBD00D0D3C7 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A26912BB7ACBC00D0D3C7 /* CreateAccountVC.swift */; };
 		064A26942BB7B8F100D0D3C7 /* NotiInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A26932BB7B8F100D0D3C7 /* NotiInfoVC.swift */; };
 		064A26962BB7BCD500D0D3C7 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A26952BB7BCD500D0D3C7 /* WelcomeVC.swift */; };
@@ -25,6 +26,8 @@
 		068032652BC6813B0009BF4E /* NotiInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068032642BC6813B0009BF4E /* NotiInfoVM.swift */; };
 		068032682BC6C1CB0009BF4E /* RegionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068032672BC6C1CB0009BF4E /* RegionRepository.swift */; };
 		0680326C2BC6C2640009BF4E /* RegionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0680326B2BC6C2640009BF4E /* RegionDataSource.swift */; };
+		0680326E2BC827590009BF4E /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0680326D2BC827580009BF4E /* Array.swift */; };
+		068032712BC8F8DE0009BF4E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068032702BC8F8DE0009BF4E /* Home.storyboard */; };
 		06BBBCE52BB1CD0600C0B0CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BBBCE42BB1CD0600C0B0CC /* AppDelegate.swift */; };
 		06BBBCE72BB1CD0600C0B0CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BBBCE62BB1CD0600C0B0CC /* SceneDelegate.swift */; };
 		06BBBCEC2BB1CD0600C0B0CC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 06BBBCEB2BB1CD0600C0B0CC /* Base */; };
@@ -35,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0647882F2BC906E90039A9C0 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		064A26912BB7ACBC00D0D3C7 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		064A26932BB7B8F100D0D3C7 /* NotiInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiInfoVC.swift; sourceTree = "<group>"; };
 		064A26952BB7BCD500D0D3C7 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		068032642BC6813B0009BF4E /* NotiInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiInfoVM.swift; sourceTree = "<group>"; };
 		068032672BC6C1CB0009BF4E /* RegionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRepository.swift; sourceTree = "<group>"; };
 		0680326B2BC6C2640009BF4E /* RegionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDataSource.swift; sourceTree = "<group>"; };
+		0680326D2BC827580009BF4E /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		068032702BC8F8DE0009BF4E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		06BBBCE12BB1CD0600C0B0CC /* KAYAK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAYAK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06BBBCE42BB1CD0600C0B0CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06BBBCE62BB1CD0600C0B0CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0647882E2BC906DA0039A9C0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0647882F2BC906E90039A9C0 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		064A26972BB8088D00D0D3C7 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				068032592BC665E40009BF4E /* String.swift */,
+				0680326D2BC827580009BF4E /* Array.swift */,
 				0680325B2BC66B060009BF4E /* UITextField.swift */,
 			);
 			path = Extension;
@@ -212,6 +227,7 @@
 		06A67F432BB34C70000660F3 /* Vc */ = {
 			isa = PBXGroup;
 			children = (
+				0647882E2BC906DA0039A9C0 /* Home */,
 				068032632BC67D620009BF4E /* NotiInfo */,
 				068032602BC67CC80009BF4E /* Welcome */,
 				0680325D2BC6797C0009BF4E /* CreateAccount */,
@@ -257,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				06BBBCEA2BB1CD0600C0B0CC /* Main.storyboard */,
+				068032702BC8F8DE0009BF4E /* Home.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -328,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06BBBCEE2BB1CD0A00C0B0CC /* Assets.xcassets in Resources */,
+				068032712BC8F8DE0009BF4E /* Home.storyboard in Resources */,
 				06BBBCF12BB1CD0A00C0B0CC /* Base in Resources */,
 				06BBBCEC2BB1CD0600C0B0CC /* Base in Resources */,
 				064A269B2BB80BA700D0D3C7 /* RegionCell.xib in Resources */,
@@ -347,6 +365,7 @@
 				0680326C2BC6C2640009BF4E /* RegionDataSource.swift in Sources */,
 				068032532BC6589F0009BF4E /* EmailVM.swift in Sources */,
 				0680325C2BC66B060009BF4E /* UITextField.swift in Sources */,
+				064788302BC906E90039A9C0 /* HomeVC.swift in Sources */,
 				06BBBCE72BB1CD0600C0B0CC /* SceneDelegate.swift in Sources */,
 				065C703A2BB4519A007B17DC /* WebViewVC.swift in Sources */,
 				068032652BC6813B0009BF4E /* NotiInfoVM.swift in Sources */,
@@ -358,6 +377,7 @@
 				068032552BC65BDC0009BF4E /* LoginVC.swift in Sources */,
 				064A269E2BB8209800D0D3C7 /* Region.swift in Sources */,
 				068032622BC67D150009BF4E /* WelcomeVM.swift in Sources */,
+				0680326E2BC827590009BF4E /* Array.swift in Sources */,
 				0680325A2BC665E40009BF4E /* String.swift in Sources */,
 				068032682BC6C1CB0009BF4E /* RegionRepository.swift in Sources */,
 				06BBBD002BB1ECCC00C0B0CC /* RootNC.swift in Sources */,

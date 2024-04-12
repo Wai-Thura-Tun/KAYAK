@@ -10,5 +10,11 @@ import Foundation
 class RegionRepository {
     private let dataSource: RegionDataSource = RegionDataSource.shared
     
-    func 
+    func getAll() -> [Region] {
+        return dataSource.getAll()
+    }
+    
+    func toggleSelectStatus(regionId id: Int) {
+        dataSource.toggleSelectStatus(regionId: id)
+    }
 }

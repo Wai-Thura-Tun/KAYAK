@@ -10,17 +10,16 @@ import UIKit
 class NotiInfoVC: UIViewController {
 
     @IBOutlet weak var btnSkip: UIButton!
-    @IBOutlet weak var btnEnableNotification: UIButton!
+    @IBOutlet weak var btnEnableNoti: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setUpBindings()
     }
 
     private func setUpBindings() {
-        btnSkip.addTarget(self, action: #selector(onTapEnableAndSkip), for: .touchUpInside)
-        btnEnableNotification.addTarget(self, action: #selector(onTapEnableAndSkip), for: .touchUpInside)
+        [btnSkip, btnEnableNoti].addTarget(action: #selector(onTapEnableAndSkip))
     }
     
     @objc func onTapEnableAndSkip() {
