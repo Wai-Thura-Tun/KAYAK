@@ -10,11 +10,13 @@ import UIKit
 class TabbarVC: UITabBarController {
 
     class CustomHeightTabbar: UITabBar {
+        
         override func sizeThatFits(_ size: CGSize) -> CGSize {
             var size = super.sizeThatFits(size)
-            size.height = 100
+            size.height = 90
             return size
         }
+        
     }
     
     private var homeVC: HomeVC {
@@ -47,6 +49,8 @@ class TabbarVC: UITabBarController {
         
         self.tabBar.backgroundColor = .white
         self.tabBar.tintColor = UIColor(named: "ThemeBgColor")
+        self.tabBar.layer.borderWidth = 1
+        self.tabBar.layer.borderColor = UIColor.lightGray.cgColor
         self.tabBar.unselectedItemTintColor = UIColor.darkGray
     }
     

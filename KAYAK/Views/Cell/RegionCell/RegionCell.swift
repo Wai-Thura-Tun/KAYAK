@@ -14,6 +14,7 @@ class RegionCell: UITableViewCell {
     @IBOutlet weak var lblRegionName: UILabel!
     @IBOutlet weak var lblRegionWeb: UILabel!
     @IBOutlet weak var lblRegionMoney: UILabel!
+    @IBOutlet weak var imgRadio: UIImageView!
     
     var data: Region? = nil {
         didSet {
@@ -23,6 +24,7 @@ class RegionCell: UITableViewCell {
                 self.lblRegionName.text = data.name
                 self.lblRegionWeb.text = data.website
                 self.lblRegionMoney.text = data.currency
+                self.imgRadio.image = UIImage(named: data.isSelected ? "radio.on" : "radio.off")
             }
         }
     }

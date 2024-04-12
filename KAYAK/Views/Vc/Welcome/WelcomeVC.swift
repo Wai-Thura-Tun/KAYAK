@@ -79,14 +79,15 @@ extension WelcomeVC: UITableViewDataSource {
 
 extension WelcomeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let region = vm.regions[indexPath.row]
+        vm.toggleSelectStatus(regionId: region.id)
     }
 }
 
 extension WelcomeVC: WelcomeViewDelegate {
     
     func onGetRegions() {
-        
+        self.tblRegion.reloadData()
     }
 }
 

@@ -99,6 +99,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="imgRadio" destination="r8Q-Le-xfp" id="AAB-tV-DOC"/>
                 <outlet property="imgRegionFlag" destination="pVx-U4-fwI" id="wmH-GS-ddI"/>
                 <outlet property="lblRegionMoney" destination="asb-M1-3uR" id="EX5-4q-hC0"/>
                 <outlet property="lblRegionName" destination="T7M-Rm-Euv" id="ICc-3k-FVb"/>
@@ -112,7 +113,7 @@
         <image name="radio.off" width="800" height="800"/>
         <image name="usa.flg" width="800" height="800"/>
         <namedColor name="CellBarColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.05000000074505806" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
