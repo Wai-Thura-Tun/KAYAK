@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  TripVC.swift
 //  KAYAK
 //
 //  Created by Wai Thura Tun on 12/04/2024.
@@ -7,23 +7,18 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class TripVC: UIViewController {
 
-    @IBOutlet weak var btnPlane: UIButton!
-    @IBOutlet weak var btnBed: UIButton!
-    @IBOutlet weak var btnCar: UIButton!
-    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
     }
-                                            
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
-        tabBarItem = UITabBarItem.init(title: "Search", image: UIImage.init(systemName: "magnifyingglass")?.withRenderingMode(.alwaysOriginal), tag: 1)
+        tabBarItem = UITabBarItem.init(title: "Trips", image: UIImage(systemName: "book.closed.fill"), tag: 3)
     }
-                                            
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,4 +33,5 @@ class HomeVC: UIViewController {
     private func setUpBindings() {
         
     }
+
 }

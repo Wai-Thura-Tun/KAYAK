@@ -51,10 +51,8 @@ class WelcomeVC: UIViewController {
     }
     
     @objc func onTapContinue() {
-        let storyboard = UIStoryboard.init(name: "Home", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "HomeVC") as? HomeVC
-        guard let vc = vc else { return }
-        self.navigationController?.pushViewController(vc, animated: true)
+        let tabBarVC = TabbarVC.init()
+        self.navigationController?.pushViewController(tabBarVC, animated: true)
     }
     
     func updateTableViewHeight() {

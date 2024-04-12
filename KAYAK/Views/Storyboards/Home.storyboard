@@ -133,10 +133,60 @@
                             <constraint firstItem="Za4-IF-yG7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="wjB-Wu-w9V"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnBed" destination="x6E-Gq-Ypv" id="HKx-3W-TmF"/>
+                        <outlet property="btnCar" destination="fEh-Uo-9qs" id="aSY-5I-Xmq"/>
+                        <outlet property="btnPlane" destination="oXL-TH-C0k" id="yT7-JP-c1X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="27" y="4"/>
+        </scene>
+        <!--ExploreVC-->
+        <scene sceneID="ML0-Tk-Gs3">
+            <objects>
+                <viewController storyboardIdentifier="ExploreVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z2q-Ro-ZYS" customClass="ExploreVC" customModule="KAYAK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bpt-Kk-oFC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qHk-rr-c85"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KjK-Wv-a73" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="4"/>
+        </scene>
+        <!--TripVC-->
+        <scene sceneID="JLp-Ll-btA">
+            <objects>
+                <viewController storyboardIdentifier="TripVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jOU-nt-nDV" customClass="TripVC" customModule="KAYAK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fcf-19-P9D">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DKV-9C-ZQM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDv-Hm-dtn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1502" y="4"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="Sp2-2S-2wn">
+            <objects>
+                <viewController storyboardIdentifier="ProfileVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WL7-6d-od8" customClass="ProfileVC" customModule="KAYAK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s1z-xm-UNB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="s0O-Ja-nDd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pRW-NB-Gve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2201" y="4"/>
         </scene>
     </scenes>
     <resources>

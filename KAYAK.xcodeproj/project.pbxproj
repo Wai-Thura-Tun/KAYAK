@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		064788302BC906E90039A9C0 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0647882F2BC906E90039A9C0 /* HomeVC.swift */; };
+		064788342BC937C00039A9C0 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064788332BC937C00039A9C0 /* TabBarVC.swift */; };
+		064788372BC9390D0039A9C0 /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064788362BC9390D0039A9C0 /* ExploreVC.swift */; };
+		0647883A2BC939690039A9C0 /* TripVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064788392BC939690039A9C0 /* TripVC.swift */; };
+		0647883D2BC9399C0039A9C0 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0647883C2BC9399C0039A9C0 /* ProfileVC.swift */; };
 		064A26922BB7ACBD00D0D3C7 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A26912BB7ACBC00D0D3C7 /* CreateAccountVC.swift */; };
 		064A26942BB7B8F100D0D3C7 /* NotiInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A26932BB7B8F100D0D3C7 /* NotiInfoVC.swift */; };
 		064A26962BB7BCD500D0D3C7 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064A26952BB7BCD500D0D3C7 /* WelcomeVC.swift */; };
@@ -39,6 +43,10 @@
 
 /* Begin PBXFileReference section */
 		0647882F2BC906E90039A9C0 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		064788332BC937C00039A9C0 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		064788362BC9390D0039A9C0 /* ExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
+		064788392BC939690039A9C0 /* TripVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripVC.swift; sourceTree = "<group>"; };
+		0647883C2BC9399C0039A9C0 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		064A26912BB7ACBC00D0D3C7 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		064A26932BB7B8F100D0D3C7 /* NotiInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiInfoVC.swift; sourceTree = "<group>"; };
 		064A26952BB7BCD500D0D3C7 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -87,6 +95,38 @@
 				0647882F2BC906E90039A9C0 /* HomeVC.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		064788322BC937A00039A9C0 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				064788332BC937C00039A9C0 /* TabBarVC.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		064788352BC938F90039A9C0 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				064788362BC9390D0039A9C0 /* ExploreVC.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		064788382BC939590039A9C0 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				064788392BC939690039A9C0 /* TripVC.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		0647883B2BC9398D0039A9C0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0647883C2BC9399C0039A9C0 /* ProfileVC.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		064A26972BB8088D00D0D3C7 /* Cell */ = {
@@ -227,7 +267,11 @@
 		06A67F432BB34C70000660F3 /* Vc */ = {
 			isa = PBXGroup;
 			children = (
+				064788322BC937A00039A9C0 /* Tabbar */,
 				0647882E2BC906DA0039A9C0 /* Home */,
+				064788352BC938F90039A9C0 /* Explore */,
+				064788382BC939590039A9C0 /* Trip */,
+				0647883B2BC9398D0039A9C0 /* Profile */,
 				068032632BC67D620009BF4E /* NotiInfo */,
 				068032602BC67CC80009BF4E /* Welcome */,
 				0680325D2BC6797C0009BF4E /* CreateAccount */,
@@ -366,6 +410,7 @@
 				068032532BC6589F0009BF4E /* EmailVM.swift in Sources */,
 				0680325C2BC66B060009BF4E /* UITextField.swift in Sources */,
 				064788302BC906E90039A9C0 /* HomeVC.swift in Sources */,
+				064788372BC9390D0039A9C0 /* ExploreVC.swift in Sources */,
 				06BBBCE72BB1CD0600C0B0CC /* SceneDelegate.swift in Sources */,
 				065C703A2BB4519A007B17DC /* WebViewVC.swift in Sources */,
 				068032652BC6813B0009BF4E /* NotiInfoVM.swift in Sources */,
@@ -373,15 +418,18 @@
 				064A26962BB7BCD500D0D3C7 /* WelcomeVC.swift in Sources */,
 				0680324C2BC5797E0009BF4E /* Regex.swift in Sources */,
 				06CB67192BB4668C0095A24B /* EmailVC.swift in Sources */,
+				064788342BC937C00039A9C0 /* TabBarVC.swift in Sources */,
 				064A26922BB7ACBD00D0D3C7 /* CreateAccountVC.swift in Sources */,
 				068032552BC65BDC0009BF4E /* LoginVC.swift in Sources */,
 				064A269E2BB8209800D0D3C7 /* Region.swift in Sources */,
 				068032622BC67D150009BF4E /* WelcomeVM.swift in Sources */,
 				0680326E2BC827590009BF4E /* Array.swift in Sources */,
+				0647883D2BC9399C0039A9C0 /* ProfileVC.swift in Sources */,
 				0680325A2BC665E40009BF4E /* String.swift in Sources */,
 				068032682BC6C1CB0009BF4E /* RegionRepository.swift in Sources */,
 				06BBBD002BB1ECCC00C0B0CC /* RootNC.swift in Sources */,
 				064A26942BB7B8F100D0D3C7 /* NotiInfoVC.swift in Sources */,
+				0647883A2BC939690039A9C0 /* TripVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
