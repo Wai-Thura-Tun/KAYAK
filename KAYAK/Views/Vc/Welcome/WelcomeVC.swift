@@ -18,12 +18,15 @@ class WelcomeVC: UIViewController {
     
     private var initialVisibleItem: Int = 2
     
+    private var previousSelectedRegionId: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setUpViews()
         setUpBindings()
         vm.getAll()
+        previousSelectedRegionId = vm.regions.first?.id
     }
     
     override func viewWillLayoutSubviews() {
@@ -80,7 +83,11 @@ extension WelcomeVC: UITableViewDataSource {
 extension WelcomeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let region = vm.regions[indexPath.row]
-        vm.toggleSelectStatus(regionId: region.id)
+        if let id = previousSelectedRegionId, region.id != id {
+            vm.toggleSelectStatusMulti(regionIds: [id, region.id])
+            previousSelectedRegionId = region.id
+            return
+        }
     }
 }
 

@@ -128,21 +128,6 @@
             </objects>
             <point key="canvasLocation" x="932.06106870229007" y="-2.1126760563380285"/>
         </scene>
-        <!--Web ViewVC-->
-        <scene sceneID="1BU-Nd-THU">
-            <objects>
-                <viewController storyboardIdentifier="WebViewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KCe-9D-gxG" customClass="WebViewVC" customModule="KAYAK" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="V5G-3C-0Wp">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Fic-e0-Vcx"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="doy-kY-vPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1958.0152671755725" y="331.69014084507046"/>
-        </scene>
         <!--EmailVC-->
         <scene sceneID="rRs-km-MQc">
             <objects>
@@ -742,7 +727,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnPrivacy" destination="bgZ-JI-SHj" id="FGB-Un-xPa"/>
                         <outlet property="btnSignInEmail" destination="YFL-eB-XSc" id="FLd-Fe-RDH"/>
+                        <outlet property="btnTerms" destination="2mT-7I-0dD" id="RR2-y5-uPr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebd-6Y-CPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

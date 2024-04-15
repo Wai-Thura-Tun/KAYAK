@@ -36,6 +36,20 @@ class HomeVC: UIViewController {
     }
     
     private func setUpBindings() {
+        btnPlane.addTarget(self, action: #selector(onTapPlane), for: .touchUpInside)
+        btnBed.addTarget(self, action: #selector(onTapBed), for: .touchUpInside)
+        btnCar.addTarget(self, action: #selector(onTapCar), for: .touchUpInside)
+    }
+    
+    @objc func onTapPlane() {
+        btnPlane.backgroundColor = UIColor(named: "ThemeBgColor")
+    }
+    
+    @objc func onTapBed() {
+        
+    }
+    
+    @objc func onTapCar() {
         
     }
 }

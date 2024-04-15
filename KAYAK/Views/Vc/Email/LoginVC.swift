@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import SafariServices
 
 class LoginVC: UIViewController {
 
     @IBOutlet weak var btnSignInEmail: UIButton!
+    @IBOutlet weak var btnTerms: UIButton!
+    @IBOutlet weak var btnPrivacy: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,8 @@ class LoginVC: UIViewController {
     
     private func setUpBindings() {
         btnSignInEmail.addTarget(self, action: #selector(onTapSignInEmail), for: .touchUpInside)
+        btnTerms.addTarget(self, action: #selector(onTapTerms), for: .touchUpInside)
+        btnPrivacy.addTarget(self, action: #selector(onTapPrivacy), for: .touchUpInside)
     }
     
     @objc func onTapSignInEmail() {
@@ -30,6 +35,18 @@ class LoginVC: UIViewController {
         let vc = storyboard.instantiateViewController(identifier: "EmailVC") as? EmailVC
         guard let vc = vc else { return }
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func onTapTerms() {
+        guard let url = URL(string: "https://www.kayak.sg/terms-of-use") else { return }
+        let safariVC = SFSafariViewController.init(url: url)
+        present(safariVC, animated: true)
+    }
+    
+    @objc func onTapPrivacy() {
+        guard let url = URL(string: "https://www.kayak.sg/privacy") else { return }
+        let safariVC = SFSafariViewController.init(url: url)
+        present(safariVC, animated: true)
     }
     
     private func addBorderToSignInEmail() {

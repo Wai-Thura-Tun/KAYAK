@@ -166,8 +166,8 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes, you can save money on an international trip this year - explore our guide for slower season travel hacks." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N69-QE-bcV">
-                                <rect key="frame" x="20" y="688.66666666666663" width="353" height="31.333333333333371"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <rect key="frame" x="20" y="688.66666666666663" width="353" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -212,6 +212,131 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="27" y="4"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TPU-8g-f47">
+            <objects>
+                <viewController id="kdk-qX-auN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jWR-ZZ-cxh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oVD-f6-nSM" userLabel="Nav Bar View">
+                                <rect key="frame" x="20" y="59" width="353" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKd-F6-MP6">
+                                        <rect key="frame" x="0.0" y="10" width="15.666666666666666" height="22"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="chevron.left" catalog="system" symbolScale="large"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5M-HP-x2H">
+                                        <rect key="frame" x="151" y="10.666666666666671" width="51" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="xKd-F6-MP6" firstAttribute="top" secondItem="oVD-f6-nSM" secondAttribute="top" constant="10" id="8nJ-Bg-oQa"/>
+                                    <constraint firstItem="xKd-F6-MP6" firstAttribute="leading" secondItem="oVD-f6-nSM" secondAttribute="leading" id="EYw-Ua-syB"/>
+                                    <constraint firstAttribute="bottom" secondItem="xKd-F6-MP6" secondAttribute="bottom" constant="10" id="NqH-Qf-tsN"/>
+                                    <constraint firstItem="k5M-HP-x2H" firstAttribute="centerX" secondItem="oVD-f6-nSM" secondAttribute="centerX" id="Opc-C7-9yh"/>
+                                    <constraint firstItem="k5M-HP-x2H" firstAttribute="centerY" secondItem="oVD-f6-nSM" secondAttribute="centerY" id="xNH-YG-J2a"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uL7-6r-M2R">
+                                <rect key="frame" x="20" y="111" width="353" height="102"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwh-0L-rEL" userLabel="Departure View">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lhC-sE-Y39">
+                                                <rect key="frame" x="10" y="13.999999999999996" width="20" height="22.666666666666675"/>
+                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="Shb-BQ-7Yr"/>
+                                                    <constraint firstAttribute="height" constant="20" id="c3y-9C-iEY"/>
+                                                </constraints>
+                                                <imageReference key="image" image="airplane.departure" catalog="system" symbolScale="large"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ant-dT-jwi">
+                                                <rect key="frame" x="40" y="0.0" width="313" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstItem="Ant-dT-jwi" firstAttribute="leading" secondItem="lhC-sE-Y39" secondAttribute="trailing" constant="10" id="0ul-F4-9Nw"/>
+                                            <constraint firstItem="lhC-sE-Y39" firstAttribute="leading" secondItem="nwh-0L-rEL" secondAttribute="leading" constant="10" id="Acq-S8-IDf"/>
+                                            <constraint firstItem="lhC-sE-Y39" firstAttribute="centerY" secondItem="nwh-0L-rEL" secondAttribute="centerY" id="Bek-50-8mI"/>
+                                            <constraint firstItem="Ant-dT-jwi" firstAttribute="top" secondItem="nwh-0L-rEL" secondAttribute="top" id="M7T-Qj-R7h"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ant-dT-jwi" secondAttribute="trailing" id="cGr-R4-Ras"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ant-dT-jwi" secondAttribute="bottom" id="lQj-Ti-OgU"/>
+                                            <constraint firstAttribute="height" constant="50" id="v3C-pO-4ie"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUM-lo-6cL" userLabel="Arrival View">
+                                        <rect key="frame" x="0.0" y="52" width="353" height="50"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mJe-NB-6R5">
+                                                <rect key="frame" x="10" y="11.333333333333332" width="20" height="25.333333333333339"/>
+                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="EkQ-W6-RNb"/>
+                                                    <constraint firstAttribute="height" constant="20" id="TNF-gC-IUf"/>
+                                                </constraints>
+                                                <imageReference key="image" image="airplane.arrival" catalog="system" symbolScale="large"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3b1-yX-cvn">
+                                                <rect key="frame" x="40" y="0.0" width="313" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="EyO-WZ-erY"/>
+                                            <constraint firstAttribute="trailing" secondItem="3b1-yX-cvn" secondAttribute="trailing" id="bQg-5A-HXZ"/>
+                                            <constraint firstItem="3b1-yX-cvn" firstAttribute="leading" secondItem="mJe-NB-6R5" secondAttribute="trailing" constant="10" id="cJL-u0-hco"/>
+                                            <constraint firstItem="3b1-yX-cvn" firstAttribute="top" secondItem="yUM-lo-6cL" secondAttribute="top" id="fRc-Sy-CUg"/>
+                                            <constraint firstItem="mJe-NB-6R5" firstAttribute="centerY" secondItem="yUM-lo-6cL" secondAttribute="centerY" id="fiJ-iF-WAR"/>
+                                            <constraint firstItem="mJe-NB-6R5" firstAttribute="leading" secondItem="yUM-lo-6cL" secondAttribute="leading" constant="10" id="kYN-oh-JxL"/>
+                                            <constraint firstAttribute="bottom" secondItem="3b1-yX-cvn" secondAttribute="bottom" id="mW4-V6-LcF"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nwh-0L-rEL" secondAttribute="trailing" id="4ET-om-trF"/>
+                                    <constraint firstAttribute="trailing" secondItem="yUM-lo-6cL" secondAttribute="trailing" id="6UN-8v-HZR"/>
+                                    <constraint firstItem="nwh-0L-rEL" firstAttribute="top" secondItem="uL7-6r-M2R" secondAttribute="top" id="hF9-hQ-6Jk"/>
+                                    <constraint firstItem="yUM-lo-6cL" firstAttribute="leading" secondItem="uL7-6r-M2R" secondAttribute="leading" id="mzZ-r3-GUQ"/>
+                                    <constraint firstItem="nwh-0L-rEL" firstAttribute="leading" secondItem="uL7-6r-M2R" secondAttribute="leading" id="nTU-MG-KYc"/>
+                                    <constraint firstItem="yUM-lo-6cL" firstAttribute="top" secondItem="nwh-0L-rEL" secondAttribute="bottom" constant="2" id="up6-rg-9uU"/>
+                                    <constraint firstAttribute="bottom" secondItem="yUM-lo-6cL" secondAttribute="bottom" id="z9e-gD-mov"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dKg-Ci-Irp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uL7-6r-M2R" firstAttribute="top" secondItem="oVD-f6-nSM" secondAttribute="bottom" constant="10" id="IIm-di-hAL"/>
+                            <constraint firstItem="uL7-6r-M2R" firstAttribute="leading" secondItem="oVD-f6-nSM" secondAttribute="leading" id="K9V-zd-13y"/>
+                            <constraint firstItem="uL7-6r-M2R" firstAttribute="trailing" secondItem="oVD-f6-nSM" secondAttribute="trailing" id="LtF-3d-AO3"/>
+                            <constraint firstItem="dKg-Ci-Irp" firstAttribute="trailing" secondItem="oVD-f6-nSM" secondAttribute="trailing" constant="20" id="YiS-9w-7VT"/>
+                            <constraint firstItem="oVD-f6-nSM" firstAttribute="leading" secondItem="dKg-Ci-Irp" secondAttribute="leading" constant="20" id="gIV-d2-IYK"/>
+                            <constraint firstItem="oVD-f6-nSM" firstAttribute="top" secondItem="dKg-Ci-Irp" secondAttribute="top" id="iMu-6a-yl7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BC8-7P-khi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.717557251908396" y="700.70422535211276"/>
         </scene>
         <!--ExploreVC-->
         <scene sceneID="ML0-Tk-Gs3">
@@ -260,9 +385,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="airplane.arrival" catalog="system" width="128" height="101"/>
         <image name="airplane.departure" catalog="system" width="128" height="84"/>
         <image name="bed.double.fill" catalog="system" width="128" height="82"/>
         <image name="car" catalog="system" width="128" height="95"/>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="dummy_singapore" width="1330.6666259765625" height="997.33331298828125"/>
         <image name="dummy_user" width="1216" height="1216"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
@@ -274,6 +401,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

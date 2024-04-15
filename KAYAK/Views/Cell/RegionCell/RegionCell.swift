@@ -20,11 +20,12 @@ class RegionCell: UITableViewCell {
         didSet {
             if let data = data {
                 self.imgRegionFlag.image = UIImage(named: data.flagUrl)
-                self.lblRegionStatus.text = "Current Region"
+                self.lblRegionStatus.text = data.isSelected ? "Current Region" : "Suggested Region"
                 self.lblRegionName.text = data.name
                 self.lblRegionWeb.text = data.website
                 self.lblRegionMoney.text = data.currency
                 self.imgRadio.image = UIImage(named: data.isSelected ? "radio.on" : "radio.off")
+                
             }
         }
     }

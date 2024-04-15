@@ -34,4 +34,11 @@ class WelcomeVM {
         repository.toggleSelectStatus(regionId: id)
         getAll()
     }
+    
+    func toggleSelectStatusMulti(regionIds ids: [Int]) {
+        ids.forEach { id in
+            repository.toggleSelectStatus(regionId: id)
+        }
+        getAll()
+    }
 }
