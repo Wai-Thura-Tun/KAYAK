@@ -9,6 +9,8 @@ import UIKit
 
 class FlightDetailVC: UIViewController {
 
+    @IBOutlet weak var btnBack: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

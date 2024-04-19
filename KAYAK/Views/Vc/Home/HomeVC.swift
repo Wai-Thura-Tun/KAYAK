@@ -43,6 +43,10 @@ class HomeVC: UIViewController {
     
     @objc func onTapPlane() {
         btnPlane.backgroundColor = UIColor(named: "ThemeBgColor")
+        let storyboard = UIStoryboard.init(name: "Home", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "FlightSearchVC") as? FlightSearchVC
+        guard let vc = vc else { return }
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func onTapBed() {

@@ -13,3 +13,13 @@ extension Optional where Wrapped == String {
         return true
     }
 }
+
+extension String {
+    func toDate(with format: String = "yyyy-MM-dd HH:mm") -> Date? {
+        let formatter = DateFormatter.init()
+        formatter.dateFormat = format
+        formatter.timeZone = .current
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        return formatter.date(from: self)
+    }
+}
