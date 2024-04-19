@@ -38,6 +38,8 @@
 		06BBBCF12BB1CD0A00C0B0CC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 06BBBCF02BB1CD0A00C0B0CC /* Base */; };
 		06BBBD002BB1ECCC00C0B0CC /* RootNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BBBCFF2BB1ECCC00C0B0CC /* RootNC.swift */; };
 		06CB67192BB4668C0095A24B /* EmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CB67182BB4668C0095A24B /* EmailVC.swift */; };
+		06CCE6C72BD2C0BA00955637 /* SiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCE6C52BD2C0BA00955637 /* SiteCell.swift */; };
+		06CCE6C82BD2C0BA00955637 /* SiteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06CCE6C62BD2C0BA00955637 /* SiteCell.xib */; };
 		06CD20EA2BCDA63F00784D30 /* FlightSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD20E92BCDA63F00784D30 /* FlightSearchVC.swift */; };
 		06CD20EC2BCDA64C00784D30 /* FlightSearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD20EB2BCDA64C00784D30 /* FlightSearchVM.swift */; };
 		06CD20F02BCDA69800784D30 /* FlightDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD20EF2BCDA69800784D30 /* FlightDetailVC.swift */; };
@@ -87,6 +89,8 @@
 		06BBBCF22BB1CD0A00C0B0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06BBBCFF2BB1ECCC00C0B0CC /* RootNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNC.swift; sourceTree = "<group>"; };
 		06CB67182BB4668C0095A24B /* EmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVC.swift; sourceTree = "<group>"; };
+		06CCE6C52BD2C0BA00955637 /* SiteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteCell.swift; sourceTree = "<group>"; };
+		06CCE6C62BD2C0BA00955637 /* SiteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SiteCell.xib; sourceTree = "<group>"; };
 		06CD20E92BCDA63F00784D30 /* FlightSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchVC.swift; sourceTree = "<group>"; };
 		06CD20EB2BCDA64C00784D30 /* FlightSearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchVM.swift; sourceTree = "<group>"; };
 		06CD20EF2BCDA69800784D30 /* FlightDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailVC.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 		064A26972BB8088D00D0D3C7 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				06CCE6C22BD2C09100955637 /* SiteCell */,
 				06E79CCC2BCFDB22008C2F79 /* FlightCell */,
 				068032662BC6BD860009BF4E /* RegionCell */,
 			);
@@ -362,6 +367,15 @@
 			path = Navigations;
 			sourceTree = "<group>";
 		};
+		06CCE6C22BD2C09100955637 /* SiteCell */ = {
+			isa = PBXGroup;
+			children = (
+				06CCE6C52BD2C0BA00955637 /* SiteCell.swift */,
+				06CCE6C62BD2C0BA00955637 /* SiteCell.xib */,
+			);
+			path = SiteCell;
+			sourceTree = "<group>";
+		};
 		06CD20E82BCDA62A00784D30 /* FlightSearch */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +476,7 @@
 				06BBBCEC2BB1CD0600C0B0CC /* Base in Resources */,
 				064A269B2BB80BA700D0D3C7 /* RegionCell.xib in Resources */,
 				06E79CCF2BCFDB5C008C2F79 /* FlightCell.xib in Resources */,
+				06CCE6C82BD2C0BA00955637 /* SiteCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +509,7 @@
 				06E79CCB2BCFCF0D008C2F79 /* FlightRepository.swift in Sources */,
 				064A26922BB7ACBD00D0D3C7 /* CreateAccountVC.swift in Sources */,
 				068032552BC65BDC0009BF4E /* LoginVC.swift in Sources */,
+				06CCE6C72BD2C0BA00955637 /* SiteCell.swift in Sources */,
 				06CD20F22BCDA6A200784D30 /* FlightListVC.swift in Sources */,
 				06CD20F92BCE7F0900784D30 /* Date.swift in Sources */,
 				06CD20EC2BCDA64C00784D30 /* FlightSearchVM.swift in Sources */,

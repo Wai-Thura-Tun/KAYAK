@@ -50,7 +50,6 @@ class WelcomeVC: UIViewController {
         btnMoreOptions.setTitle(initialVisibleItem == 2 ? "More options" : "Less options" , for: .normal)
         self.tblRegion.reloadData()
         updateTableViewHeight()
-        print(initialVisibleItem)
     }
     
     @objc func onTapContinue() {

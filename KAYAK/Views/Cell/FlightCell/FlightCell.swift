@@ -39,16 +39,16 @@ class FlightCell: UITableViewCell {
     var data: Flight? {
         didSet {
             if let data = data {
-                lblDepartTime.text = convertDateFormat(date: data.departDateTime)
+                lblDepartTime.text = data.departDateTime.convertDateFormat()
                 lblDepartPlace.text = data.departShortName
-                lblArrivalTime.text = convertDateFormat(date: data.arrivalDateTime)
+                lblArrivalTime.text = data.arrivalDateTime.convertDateFormat()
                 lblArrivalPlace.text = data.arrivalShortName
                 lblPrice.text = "$\(Int(data.price))"
                 lblAirline.text = data.airlineName
                 imgAirline.image = UIImage(named: data.airlineImgUrl)
                 lblSite.text = "\(data.sites.count) sites"
                 vStop.isHidden = !data.isNonStop
-                lblDuration.text = calculateDuration(startDate: data.departDateTime, endDate: data.arrivalDateTime)
+                lblDuration.text = data.departDateTime.calculateDuration(to: data.arrivalDateTime)
                 btnSave.setImage(UIImage(named: data.isSaved ? "save" : "unsave"), for: .normal)
             }
         }
@@ -67,22 +67,6 @@ class FlightCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-    
-    func convertDateFormat(date: Date?) -> String {
-        var dateString = date?.toString(with: "h:mma")
-        let amPm = dateString?.suffix(2)
-        dateString = dateString?.replacingOccurrences(of: amPm ?? "", with: "")
-        return "\(dateString ?? "")\(amPm?.prefix(1).lowercased() ?? "")"
-    }
-    
-    func calculateDuration(startDate: Date? , endDate: Date?) -> String? {
-        guard let startDate = startDate, let endDate = endDate else { return nil }
-        let calendar = Calendar.current
-        let dateComponet = calendar.dateComponents([.hour, .minute], from: startDate, to: endDate)
-        let hour = dateComponet.hour ?? 0
-        let minute = dateComponet.minute ?? 0
-        return "\(hour)h\(minute > 0 ? " \(minute)m" : "")"
     }
     
     @objc func onTapSave() {

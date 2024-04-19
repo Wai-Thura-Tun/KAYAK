@@ -26,6 +26,11 @@ class FlightListVC: UIViewController {
         vm.getFlightLists()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tbFlightList.reloadData()
+    }
+    
     private func setUpViews() {
         [btnSortDate, btnStop, btnTime, btnAirline].addBorder(color: UIColor.lightGray.cgColor, width: 1)
         tbFlightList.register(UINib.init(nibName: "FlightCell", bundle: nil), forCellReuseIdentifier: "FlightCell")
@@ -56,7 +61,13 @@ extension FlightListVC: UITableViewDataSource {
 }
 
 extension FlightListVC: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard.init(name: "Home", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "FlightDetailVC") as? FlightDetailVC
+        guard let vc = vc else { return }
+        vc.flightId = vm.flights[indexPath.row].id
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension FlightListVC: FlightListViewDelegate {
