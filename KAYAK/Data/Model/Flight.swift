@@ -61,7 +61,7 @@ class Flight {
     
     static func getDummyData() -> [Flight] {
         return [
-            .init(id: 1, flightNo: 1601, departShortName: "LTN", departLongName: "London", departDateTime: "2024-03-03 12:34".toDate(), arrivalShortName: "GDN", arrivalLongName: "Gdansk", arrivalDateTime: "2024-03-03 13:34".toDate(), airlineName: "Wizz Air", airlineImgUrl: "al_wizz_logo", isNonStop: true, numOfTraveler: 1, seatType: .economy, sites: [
+            .init(id: 1, flightNo: 1601, departShortName: "LTN", departLongName: "London", departDateTime: "2024-03-03 12:34".toDate(), arrivalShortName: "GDN", arrivalLongName: "Gdansk", arrivalDateTime: "2024-03-03 13:34".toDate(), airlineName: "Wizz Air", airlineImgUrl: "al_wizz_logo", isNonStop: false, numOfTraveler: 1, seatType: .economy, sites: [
                 .init(name: "Kiwi.com", price: 18),
                 .init(name: "eDreams", price: 19),
                 .init(name: "Booking.com", price: 24),

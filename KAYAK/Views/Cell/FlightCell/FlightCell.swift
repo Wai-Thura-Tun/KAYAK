@@ -13,8 +13,6 @@ protocol FlightCellDelegate {
 
 class FlightCell: UITableViewCell {
 
-    @IBOutlet weak var saveView: UIView!
-    @IBOutlet weak var priceView: UIView!
     @IBOutlet weak var bestCheapView: UIView!
     @IBOutlet weak var lblDepartTime: UILabel!
     @IBOutlet weak var lblArrivalTime: UILabel!
@@ -26,7 +24,8 @@ class FlightCell: UITableViewCell {
     @IBOutlet weak var imgAirline: UIImageView!
     @IBOutlet weak var lblAirline: UILabel!
     @IBOutlet weak var btnSave: UIButton!
-    @IBOutlet weak var vStop: UIView!
+    @IBOutlet weak var vOneStop: UIView!
+    @IBOutlet weak var vNoneStop: UIView!
     
     var isBestCheapViewHidden: Bool = false {
         didSet {
@@ -47,9 +46,10 @@ class FlightCell: UITableViewCell {
                 lblAirline.text = data.airlineName
                 imgAirline.image = UIImage(named: data.airlineImgUrl)
                 lblSite.text = "\(data.sites.count) sites"
-                vStop.isHidden = !data.isNonStop
+                vOneStop.isHidden = data.isNonStop
+                vNoneStop.isHidden = !data.isNonStop
                 lblDuration.text = data.departDateTime.calculateDuration(to: data.arrivalDateTime)
-                btnSave.setImage(UIImage(named: data.isSaved ? "save" : "unsave"), for: .normal)
+                btnSave.setImage(UIImage(systemName: data.isSaved ? "heart.fill" : "heart"), for: .normal)
             }
         }
     }
@@ -58,9 +58,7 @@ class FlightCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         selectionStyle = .none
-        priceView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-        saveView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-        btnSave.addTarget(self, action: #selector(onTapSave), for: .touchUpInside)
+        //btnSave.addTarget(self, action: #selector(onTapSave), for: .touchUpInside)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
